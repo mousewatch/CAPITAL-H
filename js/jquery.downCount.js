@@ -46,7 +46,7 @@
          */
         function countdown () {
             var target_date = new Date(settings.date), // set target date
-                current_date = currentDate(); // get fixed current date
+                current_date = currentDate(01/07/2018); // get fixed current date
 
             // difference of dates
             var difference = target_date - current_date;
@@ -96,7 +96,7 @@
             container.find('.minutes_ref').text(ref_minutes);
             container.find('.seconds_ref').text(ref_seconds);
         };
-        
+
         // start
         var interval = setInterval(countdown, 1000);
     };
